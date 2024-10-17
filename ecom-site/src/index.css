@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* index.css */
+
+/* Product Card Custom Styles */
+.product-card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105;
+}
+
+.product-image {
+  @apply w-full h-48 object-cover;
+}
+
+.product-info {
+  @apply p-6;
+}
+
+.product-title {
+  @apply text-lg font-semibold text-gray-800;
+}
+
+.product-price {
+  @apply text-gray-600 mt-2 mb-4;
+}
+
+.add-to-cart-btn {
+  @apply bg-orange-500 text-white font-bold py-2 px-4 rounded-md hover:bg-orange-600 transition duration-300;
+}
+
+/* Cart Section */
+.cart-section {
+  @apply mb-10 bg-white shadow-lg rounded-lg p-6;
+}
+
+.cart-header {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+.cart-item {
+  @apply flex justify-between p-2 border-b border-gray-200;
+}
+
+.cart-item-name {
+  @apply text-gray-700;
+}
+
+.cart-item-price {
+  @apply font-semibold;
+}
+
+/* Filter and Sort Section */
+.filter-sort-section {
+  @apply flex justify-between items-center mb-8;
+}
+
+.select-label {
+  @apply block mb-2 text-gray-700 font-semibold;
+}
+
+.select-input {
+  @apply w-full p-2 border border-gray-300 rounded-md;
+}
+
+/* General Styles */
+.section-container {
+  @apply container mx-auto p-8 bg-gray-100 min-h-screen;
+}
+
+.section-header {
+  @apply text-4xl font-extrabold text-center text-orange-600 mb-10;
+}
+
+.grid-container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
